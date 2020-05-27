@@ -1,0 +1,50 @@
+div.main {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+div.options {
+	background-color: lightgray;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+div.main input[type=checkbox] {
+	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+div.main input[type=checkbox] + label {
+    padding-left:35px;
+    height:30px; 
+    display:inline-block;
+    line-height:30px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:16px;
+    vertical-align:middle;
+    cursor:pointer;
+    margin-bottom: 8px;
+}
+
+div.main input[type=checkbox]:checked + label {
+    background-position: 0 -30px;
+}
+
+div.main label {
+    background-image:url(images/checkbox.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div.status {
+    margin-top: 16px;
+    margin-left: 20px;
+    color: green;
+    font-size:16px;
+}
